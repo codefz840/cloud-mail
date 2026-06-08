@@ -49,6 +49,7 @@ jobs:
           cf_account_id: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           cf_zone_id: ${{ env.CLOUDFLARE_ZONE_ID }}
           cf_api_token: ${{ env.CLOUDFLARE_API_TOKEN }}
+          disable_bot_fight_mode: 'true'
 
       - name: ⚙ 设置 pnpm / Set up pnpm
         uses: pnpm/action-setup@v4.1.0
